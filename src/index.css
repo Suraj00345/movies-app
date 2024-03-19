@@ -1,0 +1,68 @@
+@import 'material-icons/iconfont/material-icons.css';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #267008;
+}
+
+.movies-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;
+    .movie-card {
+        padding: 10px;
+        background-color: #e3e3e3;
+        border-radius: 10px;
+        color: #000;
+        .image-container {
+            height: 300px;
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .material-icons {
+                font-size: 1rem !important;
+            }
+            .rating{
+                backdrop-filter: blur(10px);
+                color: #fff;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                font-size: 1rem;
+                position:absolute;
+                bottom: 10px;
+                left: 10px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+
+label{
+    color: white;
+    padding-right: 25px;
+    font-size: large;
+}
+
+label:hover{
+    color: rgb(236, 182, 81);
+}
+
+button{
+    background-color: #e3e3e3;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(224, 172, 104);
+}
